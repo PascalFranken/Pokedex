@@ -24,8 +24,16 @@
     gap: 10px;
 }
 
-.header_logo{
-    width: 50px;
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex: 1;
+}
+
+.content_limitation_main{
+    max-width: 1440px;
+    height: auto;
 }
 
 .footer{

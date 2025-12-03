@@ -5,3 +5,9 @@
 .input_direction{
     display: flex;
 }
+
+.small_pokemon_card{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+}

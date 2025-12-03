@@ -26,15 +26,20 @@
 
 .main{
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex: 1;
+    max-width: 1440px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.content_limitation_main{
-    max-width: 1440px;
+/* .content_limitation_main{
+    
     height: auto;
-}
+    display: flex;
+    
+} */
 
 .footer{
     width: 100%;

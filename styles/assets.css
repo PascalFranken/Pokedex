@@ -7,7 +7,37 @@
 }
 
 .small_pokemon_card{
-    height: 500px;
-    width: 500px;
+    height: 200px;
+    width: 200px;
     background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.small_pokemon_card:hover{
+    cursor: pointer;
+    border: solid 3px red;
+}
+
+.type_and_img_direction{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.type_direction{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: yellow;
+
+}
+
+.img_size{
+    height: 50px;
 }

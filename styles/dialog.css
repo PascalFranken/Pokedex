@@ -1,0 +1,20 @@
+dialog{
+    margin: auto;
+    background-color: aquamarine;
+    height: 800px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.pokemonCard_dialog{
+    display:flex;
+    justify-content: flex-end;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.pokemonCard_dialog::backdrop{
+    color: rgb(0,0,0, 0.5);
+}

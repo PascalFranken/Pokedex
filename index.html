@@ -28,9 +28,14 @@
         </div>
     </header>
     <main id="content" class="main">
-        <!-- <div  class="content_limitation_main">
-        </div> -->
     </main>
     <footer class="footer"></footer>
+    <dialog id="dialog" onclick="closeDialogWithBackgroundClick()">
+        <div class="pokemonCard_dialog" onclick="bubblingProtection(event)">
+            <button onclick="closeDialogWithButton()" class="close_button">
+                <img class="close_button_img" src="./assets/img/close_btn.png" alt="">
+            </button>
+        </div>
+    </dialog>
 </body>
 </html>

@@ -41,3 +41,20 @@
 .img_size{
     height: 50px;
 }
+
+.close_button{
+    background-color: aquamarine;
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+
+.close_button:hover{
+    cursor: pointer;
+}
+
+.close_button_img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}

@@ -1,6 +1,6 @@
 function test(){
    return /*html*/`
-        <button class="small_pokemon_card">
+        <button onclick="openPokemonCard()" class="small_pokemon_card">
             <h2>Name of pokemon</h2>
             <div class="type_and_img_direction">
                 <div class="type_direction">

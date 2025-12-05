@@ -32,9 +32,29 @@
     <footer class="footer"></footer>
     <dialog id="dialog" onclick="closeDialogWithBackgroundClick()">
         <div class="pokemonCard_dialog" onclick="bubblingProtection(event)">
+            <section>
+            <h2 class="dialogPokemonName" id="pokemonName"></h2>
+            <p id="type"></p>
             <button onclick="closeDialogWithButton()" class="close_button">
                 <img class="close_button_img" src="./assets/img/close_btn.png" alt="">
             </button>
+            </section>
+            <section>
+            <div>
+                <button>
+                    <p>About</p>
+                </button>
+                <button>
+                    <p>Base Stats</p>
+                </button>
+                <button>
+                    <p>Gender</p>
+                </button>
+                <button>
+                    <p>Shiny</p>
+                </button>
+            </div>
+            </section>
         </div>
     </dialog>
 </body>

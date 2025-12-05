@@ -2,19 +2,28 @@ function init(){
     fetchAllPokemonData();   
 }
 
-const allPokemon = [];
+let allPokemon = [];
+let currentPokemon = [];
 
 async function fetchAllPokemonData(){
-    const pokemonData = await fetch("https://pokeapi.co/api/v2/pokemon?limit=10&offset=0");
+    for (let index = 1; index <=11; index++) {
+        const pokemonData = await fetch(`https://pokeapi.co/api/v2/pokemon/${index}`);
     const pokemonAsJson = await pokemonData.json();
-    allPokemon.push(pokemonAsJson);
+        allPokemon.push(pokemonAsJson);
+    allPokemon = currentPokemon;
+    
+    }
     renderPokemonCard();
+    
+    
+   
 }
 
 function renderPokemonCard(){
     const pokemonCard = document.getElementById('content')
-    for (let index = 0; index < allPokemon[0].results.length; index++) {
-        pokemonCard.innerHTML += getPokemonTemplate(0);
+    for (let index = 0; index < currentPokemon.length; index++) {
+        const name = currentPokemon[index].name;
+        pokemonCard.innerHTML += getPokemonTemplate(index);
     }    
 }
 

@@ -6,7 +6,7 @@ let allPokemon = [];
 let currentPokemon = [];
 
 async function fetchAllPokemonData(){
-    for (let index = 1; index <=11; index++) {
+    for (let index = 1; index <=40; index++) {
         const pokemonData = await fetch(`https://pokeapi.co/api/v2/pokemon/${index}`);
     const pokemonAsJson = await pokemonData.json();
         allPokemon.push(pokemonAsJson);
@@ -22,10 +22,12 @@ async function fetchAllPokemonData(){
 function renderPokemonCard(){
     const pokemonCard = document.getElementById('content')
     for (let index = 0; index < currentPokemon.length; index++) {
-        const name = currentPokemon[index].name;
+        let name = currentPokemon[index].name;
+        nameUppercase = name.charAt(0).toUpperCase() + name.slice(1);
         pokemonCard.innerHTML += getPokemonTemplate(index);
     }    
 }
+
 
 
 
